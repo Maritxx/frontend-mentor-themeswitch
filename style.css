@@ -96,6 +96,7 @@ h2 {
   color: var(--text-secondary);
   font-weight: 700;
   padding-right: 10px;
+  vertical-align: -webkit-baseline-middle;
 }
 
 /*Header*/
@@ -144,7 +145,6 @@ header {
   bottom: 0;
   left: 0;
   border-radius: 34px;
-  vertical-align: middle;
 }
 .slider::before {
   position: absolute;
@@ -172,10 +172,10 @@ input:checked + .slider:before {
 .dashboard {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 15px;
 }
 
-.dashboard-statistics__holder {
+.dashboard-statistics__holder, .dashboard-overview__holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -193,6 +193,20 @@ input:checked + .slider:before {
 }
 @media all and (min-width: 782px) {
   .stats__box {
+    max-width: 255px;
+  }
+}
+
+.overview__box {
+  background-color: var(--bg-tertiary);
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+}
+@media all and (min-width: 782px) {
+  .overview__box {
     max-width: 255px;
   }
 }
