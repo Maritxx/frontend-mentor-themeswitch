@@ -62,6 +62,7 @@ h2 {
 	color: var(--text-primary);
 
 	&--small {
+		@extend .dashboard__title;
 		font-size: 0.75rem;
 	}
 }
