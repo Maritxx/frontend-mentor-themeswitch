@@ -44,7 +44,7 @@ h2 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--text-primary);
-  padding-left: 30px;
+  text-align: center;
 }
 
 .dashboard__title, .dashboard__title--small {
@@ -105,7 +105,7 @@ h2 {
 header {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30 45px;
+  padding: 30px 45px;
 }
 @media all and (min-width: 782px) {
   header {
