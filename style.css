@@ -217,10 +217,10 @@ input:checked + .slider:before {
   padding-right: 5px;
 }
 .stats__box--ig {
-  border-top-width: 5px;
-  border-image: var(--icon-ig);
-  border-style: solid;
-  border-image-slice: 1;
+  background-image: var(--icon-ig);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  padding-top: 35px;
 }
 .stats__box--ig.dashboard__title--small::before {
   content: url("img/icon-instagram.svg");

@@ -263,10 +263,10 @@ input:checked + .slider:before {
 	}
 
 	&--ig {
-		border-top-width: 5px;
-		border-image: var(--icon-ig);
-		border-style: solid;
-		border-image-slice: 1;
+		background-image: var(--icon-ig);
+		background-size: 100% 5px;
+		background-repeat: no-repeat;
+		padding-top: 35px;
 
 		&.dashboard__title--small::before {
 			content: url("img/icon-instagram.svg");
