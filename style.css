@@ -1,3 +1,136 @@
+/*Global Styles*/
+.theme__light {
+  --bg-primary: #FFFFFF; /*White*/
+  --bg-secondary: #F5F7FF; /*Light grey*/
+  --bg-tertiary: #F0F2FA; /*Medium light grey*/
+  --text-primary: #63687E; /*Grey blue*/
+  --heading-primary: #1E202A; /*Very Dark blue*/
+}
+.theme__dark {
+  --bg-primary: #1E202A; /*Very Dark blue*/
+  --bg-secondary: #1F212E; /*Dark blue*/
+  --bg-tertiary: #252A41; /*Medium blue*/
+  --text-primary: #8B97C6; /*Grey blue*/
+  --heading-primary: #FFFFFF; /*White*/
+}
 
+body {
+  position: relative;
+  background-color: var(--bg-primary);
+  font-family: var(--main-font);
+}
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: var(--bg-secondary);
+  top: 0;
+  width: 100vw;
+  height: 35vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*Font Styling*/
+h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--heading-primary);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.dashboard-title {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+.dashboard-title__small {
+  font-size: 0.75rem;
+}
+
+.dashboard-stats {
+  font-weight: 700;
+  font-size: 2.1875rem;
+  color: var(--heading-primary);
+}
+.dashboard-stats__small {
+  font-size: 1.75rem;
+}
+
+.stats__down {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--stats-down);
+}
+.stats__down::before {
+  content: url("img/icon-up.svg");
+  padding-right: 3px;
+}
+.stats__up {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--stats-up);
+}
+.stats__up::before {
+  content: url("img/icon-down.svg");
+  padding-right: 3px;
+}
+
+.dashboard-followers {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+/*Header*/
+/*Toggle Switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  background-color: var(--toggle-light);
+  transition: 0.4s;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 34px;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--bg-primary);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background: var(--toggle-dark);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -3,27 +3,15 @@
 }
 
 :root {
-  --stats__up: #1DB489; /*Light green*/
-  --stats__down: #DC414C; /*Light red*/
+  --stats-up: #1DB489; /*Light green*/
+  --stats-down: #DC414C; /*Light red*/
   --icon-fb: #198FF5; /*Blue Facebook*/
   --icon-twitter: #1CA0F2; /*Blue Twitter*/
   --icon-ig: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%); /*Gradient yellow/pink Instagram*/
   --icon-yt: #C4032A; /*Red Youtube*/
 
-  --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%); /*Gradient blue/green*/
+  --toggle-dark: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%); /*Gradient blue/green*/
   --toggle-light: #AEB3CB;
-
-  --dark-bg-primary: #1E202A; /*Very Dark blue*/
-  --dark-bg-secondary: #1F212E; /*Dark blue*/
-  --dark-bg-tertiary: #252A41; /*Medium blue*/
-  --dark-text-primary: #8B97C6; /*Grey blue*/
-  --dark-heading-primary: #FFFFFF; /*White*/
-
-  --light-bg-primary: #FFFFFF; /*White*/
-  --light-bg-secondary: #F5F7FF; /*Light grey*/
-  --light-bg-tertiary: #F0F2FA; /*Medium light grey*/
-  --light-text-primary: #63687E; /*Grey blue*/
-  --light-heading-primary: #1E202A; /*Very Dark blue*/
 
   --main-font: 'Inter', 'Arial', sans-serif;
 }
