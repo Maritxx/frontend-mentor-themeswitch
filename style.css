@@ -205,14 +205,14 @@ input:checked + .slider:before {
 .stats__box--fb {
   border-top: 5px solid var(--icon-fb);
 }
-.stats__box--fb.dashboard__title--small::before {
+.stats__box--fb .dashboard__title--small::before {
   content: url("img/icon-facebook.svg");
   padding-right: 5px;
 }
 .stats__box--twitter {
   border-top: 5px solid var(--icon-twitter);
 }
-.stats__box--twitter.dashboard__title--small::before {
+.stats__box--twitter .dashboard__title--small::before {
   content: url("img/icon-twitter.svg");
   padding-right: 5px;
 }
@@ -222,14 +222,14 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   padding-top: 35px;
 }
-.stats__box--ig.dashboard__title--small::before {
+.stats__box--ig .dashboard__title--small::before {
   content: url("img/icon-instagram.svg");
   padding-right: 5px;
 }
 .stats__box--yt {
   border-top: 5px solid var(--icon-yt);
 }
-.stats__box--yt.dashboard__title--small::before {
+.stats__box--yt .dashboard__title--small::before {
   content: url("img/icon-youtube.svg");
   padding-right: 5px;
 }

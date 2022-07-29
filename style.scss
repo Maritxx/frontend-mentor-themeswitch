@@ -247,7 +247,7 @@ input:checked + .slider:before {
 	&--fb {
 		border-top: 5px solid var(--icon-fb);
 
-		&.dashboard__title--small::before {
+		.dashboard__title--small::before {
 			content: url("img/icon-facebook.svg");
 			padding-right: 5px;
 		}
@@ -256,7 +256,7 @@ input:checked + .slider:before {
 	&--twitter {
 		border-top: 5px solid var(--icon-twitter);
 
-		&.dashboard__title--small::before {
+		.dashboard__title--small::before {
 			content: url("img/icon-twitter.svg");
 			padding-right: 5px;
 		}
@@ -268,7 +268,7 @@ input:checked + .slider:before {
 		background-repeat: no-repeat;
 		padding-top: 35px;
 
-		&.dashboard__title--small::before {
+		.dashboard__title--small::before {
 			content: url("img/icon-instagram.svg");
 			padding-right: 5px;
 		}
@@ -277,7 +277,7 @@ input:checked + .slider:before {
 	&--yt {
 		border-top: 5px solid var(--icon-yt);
 
-		&.dashboard__title--small::before {
+		.dashboard__title--small::before {
 			content: url("img/icon-youtube.svg");
 			padding-right: 5px;
 		}
