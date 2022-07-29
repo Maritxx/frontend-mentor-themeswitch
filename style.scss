@@ -249,7 +249,9 @@ input:checked + .slider:before {
 
 		.dashboard__title--small::before {
 			content: url("img/icon-facebook.svg");
-			padding-right: 5px;
+			padding-right: 7px;
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
@@ -258,7 +260,9 @@ input:checked + .slider:before {
 
 		.dashboard__title--small::before {
 			content: url("img/icon-twitter.svg");
-			padding-right: 5px;
+			padding-right: 7px;
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
@@ -270,7 +274,9 @@ input:checked + .slider:before {
 
 		.dashboard__title--small::before {
 			content: url("img/icon-instagram.svg");
-			padding-right: 5px;
+			padding-right: 7px;
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 
@@ -279,7 +285,9 @@ input:checked + .slider:before {
 
 		.dashboard__title--small::before {
 			content: url("img/icon-youtube.svg");
-			padding-right: 5px;
+			padding-right: 7px;
+			display: inline-block;
+			vertical-align: middle;
 		}
 	}
 }

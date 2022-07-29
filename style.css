@@ -207,14 +207,18 @@ input:checked + .slider:before {
 }
 .stats__box--fb .dashboard__title--small::before {
   content: url("img/icon-facebook.svg");
-  padding-right: 5px;
+  padding-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .stats__box--twitter {
   border-top: 5px solid var(--icon-twitter);
 }
 .stats__box--twitter .dashboard__title--small::before {
   content: url("img/icon-twitter.svg");
-  padding-right: 5px;
+  padding-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .stats__box--ig {
   background-image: var(--icon-ig);
@@ -224,14 +228,18 @@ input:checked + .slider:before {
 }
 .stats__box--ig .dashboard__title--small::before {
   content: url("img/icon-instagram.svg");
-  padding-right: 5px;
+  padding-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .stats__box--yt {
   border-top: 5px solid var(--icon-yt);
 }
 .stats__box--yt .dashboard__title--small::before {
   content: url("img/icon-youtube.svg");
-  padding-right: 5px;
+  padding-right: 7px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .overview__box {
