@@ -28,7 +28,7 @@ body::after {
   background-color: var(--bg-secondary);
   top: 0;
   width: 100vw;
-  height: 35vh;
+  height: 30vh;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -44,6 +44,7 @@ h2 {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--text-primary);
+  padding: 0px 15px;
 }
 
 .dashboard__title, .dashboard__title--small {
@@ -204,11 +205,22 @@ input:checked + .slider:before {
   padding: 20px;
   margin: 15px;
   width: 100%;
+  max-width: 350px;
 }
 @media all and (min-width: 782px) {
   .overview__box {
     max-width: 255px;
   }
+}
+.overview__box--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview__box--stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,7 +32,7 @@ body {
 		background-color: var(--bg-secondary);
 		top: 0;
 		width: 100vw;
-		height: 35vh;
+		height: 30vh;
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
 	}
@@ -55,6 +55,7 @@ h2 {
 	font-weight: 700;
 	font-size: 1.5rem;
 	color: var(--text-primary);
+	padding: 0px 15px;
 }
 
 
@@ -247,8 +248,21 @@ input:checked + .slider:before {
 	padding: 20px;
 	margin: 15px;
 	width: 100%;
+	max-width: 350px;
 
 	@media all and (min-width: 782px) {
 		max-width: 255px;
+	}
+
+	&--info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&--stats {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
