@@ -1,5 +1,5 @@
 /*Global Styles*/
-.theme {
+body.theme {
 	&__light {
 		--bg-primary: #FFFFFF; /*White*/
 		--bg-secondary: #F5F7FF; /*Light grey*/
@@ -56,23 +56,24 @@ h2 {
 }
 
 
-.dashboard-title {
+.dashboard__title {
 	font-weight: 700;
 	font-size: 0.875rem;
 	color: var(--text-primary);
 
-	&__small {
+	&--small {
 		font-size: 0.75rem;
 	}
 }
 
 
-.dashboard-stats {
+.dashboard__stats {
 	font-weight: 700;
 	font-size: 2.1875rem;
 	color: var(--heading-primary);
 
-	&__small {
+	&--small {
+		@extend .dashboard__stats;
 		font-size: 1.75rem;
 	}
 }
@@ -85,7 +86,7 @@ h2 {
 		color: var(--stats-down);
 
 		&::before {
-			content: url("img/icon-up.svg");
+			content: url("img/icon-down.svg");
 			padding-right: 3px;
 		}
 	}
@@ -96,14 +97,14 @@ h2 {
 		color: var(--stats-up);
 
 		&::before {
-			content: url("img/icon-down.svg");
+			content: url("img/icon-up.svg");
 			padding-right: 3px;
 		}
 	}
 }
 
 
-.dashboard-followers {
+.dashboard__followers {
 	letter-spacing: 0.3rem;
 	text-transform: uppercase;
 	color: var(--text-primary);
